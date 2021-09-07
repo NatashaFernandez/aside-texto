@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="aside.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/19dc427cb9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <aside class="panels">
+            <section class="panel-text">
+                <h3 class="panel-title">texto</h3>
+                <div class="panel-ctrl">
+                    <label class="panel-ctrl-title">superior</label>
+                    <textarea class="panel-ctrl-input" name="top-text" placeholder="TOP TEXsT"></textarea>
+                    <div class="panel-ctrl-option">
+                        <input type="checkbox" name="seleccionar"><span>Sin texto superior</span>
+                    </div>
+                </div>
+                <div class="panel-ctrl">
+                    <label class="panel-ctrl-title">inferior</label>
+                    <textarea class="recuadro" name="button-text" placeholder="BOTTOM TEXT"></textarea><br>
+                    <div class="panel-ctrl-option">
+                        <input type="checkbox" name="seleccionar"><span>Sin texto inferior</span>
+                    </div>
+                </div>
+                <div class="panel-ctrl">
+                    <label class="panel-ctrl-title">fuente</label>
+                    <select class="recuadro" name="fuente">
+                        <option value="Arial">Arial</option>
+                        <option value="Arial Black">Arial Black</option>
+                        <option value="American Typewriter">American Typewriter</option>
+                        <option value="Andale Mono">Andale Mono</option>
+                        <option value="Comic Sans MS">Comic Sans MS</option>
+                        <option value="Helvetica">Helvetica</option>
+                        <option value="Impact">Impact</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+                </div>
+                <div class="panel-ctrls width-for-2">
+                    <div class="panel-ctrl" id="fonts">
+                        <input name="font-size" type="number">
+                    </div>
+                    <div class="panel-ctrls width-for-3" id="aligments">
+                        <button class="alin"><i class="fas fa-align-left"></i></button>
+                        <button class="alin"><i class="fas fa-align-justify"></i></button>
+                        <button class="alin"><i class="fas fa-align-right"></i></button>
+                    </div>
+                </div>
+                <div class="panel-ctrl">
+                    <div class="panel-ctrls width-for-2">
+                        <div class="panel-ctrl">
+                            <label class="panel-ctrl-title">color</label>
+                            <div class="color">
+                                <input  type="color">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="panel-ctrl">
+                            <label class="panel-ctrl-title">fondo</label>
+                            <div class="color">
+                                <input type="color">
+                                <span>#FFF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-ctrl-option">
+                        <input class="transparent" type="checkbox" name="seleccionar">Fondo transparente
+                    </div>
+                </div>
+                <div class="panel-ctrl width-for-3">
+                    <label class="panel-ctrl-title">contorno</label>
+                    <div class="panel-ctrls width-for-3">
+                        <button>Ninguno</button>
+                        <button>Claro</button>
+                        <button>Oscuro</button>
+                    </div>
+                </div>
+                <div class="panel-ctrl">
+                    <label class="panel-ctrl-title">espaciado</label>
+                    <input class="recuadro" type="number">
+                </div>
+                <div class="panel-ctrl">
+                    <label class="panel-ctrl-title">interlineado</label>
+                    <input class="recuadro" type="number">
+                </div>
+            </section>
+        </aside>
+    </body>
+</html>

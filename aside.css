@@ -1,0 +1,125 @@
+:root {
+  --General-TextColor: #fefefe;
+  --General-Gap: 10px;
+  --General-Margin: .9em;
+  --General-CalcWidthFor-TwoColumns: calc(100% / 2 - var(--General-Gap) / 2);
+  --General-CalcWidthFor-ThreeColumns: calc(100% / 3 - var(--General-Gap) / 3);
+  --Page-BackgroundColor: #353535;
+  --Section-BackgroundColor: #353535;
+  --control-BackgroundColor: #242424;
+  --control-BackgroundColor-OnFocus: #3f3f3f;
+  --control-BorderColor: #6e6e6e;
+  --control-BorderColor-OnFocus: #6cc1ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: var(--General-TextColor);
+}
+
+.width-for-2>.panel-ctrl,
+.width-for-2>.panel-ctrls{
+  width: var(--General-CalcWidthFor-TwoColumns);
+}
+
+.width-for-3>button{
+  width: var(--General-CalcWidthFor-ThreeColumns);
+}
+
+aside.panels .panel-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--Page-BackgroundColor);
+  padding: 15px;
+  min-width: 270px;
+}
+
+aside.panel-title {
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+.panel-ctrl{
+  margin-bottom: var(--General-Margin);
+}
+
+.panel-ctrls{
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: var(--General-Margin);
+}
+.panel-ctrl-title{
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: var(--General-Margin);
+}
+
+.panel-ctrl-option{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: calc(var(--General-Margin)/2) 0;
+}
+
+input[type='checkbox'] {
+  width: inherit;
+  margin: 0;
+  margin-right: 10px;
+}
+.panel-ctrl-option span
+{
+  display: block;
+}
+
+input,
+textarea,
+button,
+select,
+.color{
+  width: -webkit-fill-available;
+  padding: 0.6em 0.4em;
+  outline: none;
+  border: 2px solid var(--control-BorderColor);
+  background-color: var(--control-BackgroundColor);
+  border-radius: 5px;
+  color: var(--General-TextColor);
+}
+
+input:hover,
+textarea:hover,
+button:hover,
+select:hover,
+.color:hover{
+  border-color: var(--control-BorderColor-OnFocus);
+  background-color: var(--control-BackgroundColor-OnFocus);
+}
+
+p {
+  font-size: 0.8rem;
+  margin-bottom: -0.8em;
+}
+
+input[type="color"]{
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  margin-right: var(--General-Margin);
+  margin-bottom: 0;
+}
+
+.panel-ctrls + .panel-ctrl-option{
+  margin-top: calc(var(--General-Margin) * -1);
+}
